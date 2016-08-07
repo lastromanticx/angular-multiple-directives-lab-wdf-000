@@ -14,8 +14,9 @@ function ContactController() {
         this.contacts.splice(index, 1);
     }
 
-    this.addContact = function (name,phone) {
-      this.contacts.push({name: name, phone: phone});
+    this.addContact = function () {
+      this.contacts.push({name: this.name, phone: this.phoneNumber});
+      this.name = this.phoneNumber = '';
     }
 }
 

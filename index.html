@@ -21,15 +21,15 @@
 
             <h2>Add contact</h2>
 
-            <form ng-submit="vm.addContact(name,phone)">
+            <form ng-submit="vm.addContact()">
                 <div>
                     <label>Name</label>
-                    <input ng-model="name" />
+                    <input ng-model="vm.name" />
                 </div>
 
                 <div>
                     <label>Phone</label>
-                    <input ng-model="phone" />
+                    <input ng-model="vm.phoneNumber" />
                 </div>
                 <button type="submit">Add Contact</button>
             </form>
